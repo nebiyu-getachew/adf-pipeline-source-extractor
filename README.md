@@ -67,4 +67,4 @@ The `output.xlsx` file will have the following structure:
 |----------------|---------------|
 | pipeline_name1 | source_name1  |
 | pipeline_name2 | source_name2  |
-| ...            | ...           |
+| ...            | ...           |# adf-pipeline-source-extractor
