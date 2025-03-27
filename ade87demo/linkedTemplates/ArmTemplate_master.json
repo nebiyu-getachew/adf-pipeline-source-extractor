@@ -15,6 +15,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'SHEGa'"
 		},
+		"destinationblob_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'destinationblob'"
+		},
+		"sourceblob_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'sourceblob'"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -47,6 +55,12 @@
 					},
 					"SHEGa_connectionString": {
 						"value": "[parameters('SHEGa_connectionString')]"
+					},
+					"destinationblob_connectionString": {
+						"value": "[parameters('destinationblob_connectionString')]"
+					},
+					"sourceblob_connectionString": {
+						"value": "[parameters('sourceblob_connectionString')]"
 					}
 				}
 			},

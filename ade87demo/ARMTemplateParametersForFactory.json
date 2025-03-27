@@ -10,6 +10,12 @@
 		},
 		"SHEGa_connectionString": {
 			"value": ""
+		},
+		"destinationblob_connectionString": {
+			"value": ""
+		},
+		"sourceblob_connectionString": {
+			"value": ""
 		}
 	}
 }
