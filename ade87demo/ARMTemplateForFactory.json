@@ -43,7 +43,7 @@
 								"type": "DelimitedTextSource",
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
-									"fileListPath": "demo",
+									"fileListPath": "demo/products_cleaned.csv",
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
@@ -53,13 +53,12 @@
 							"sink": {
 								"type": "DelimitedTextSink",
 								"storeSettings": {
-									"type": "AzureBlobStorageWriteSettings",
-									"copyBehavior": "FlattenHierarchy"
+									"type": "AzureBlobStorageWriteSettings"
 								},
 								"formatSettings": {
 									"type": "DelimitedTextWriteSettings",
 									"quoteAllText": true,
-									"fileExtension": ".txt"
+									"fileExtension": ".csv"
 								}
 							},
 							"enableStaging": false,
