@@ -1,0 +1,47 @@
+{
+	"name": "source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ABS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "demo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ProductID",
+				"type": "String"
+			},
+			{
+				"name": "ProductName",
+				"type": "String"
+			},
+			{
+				"name": "Category",
+				"type": "String"
+			},
+			{
+				"name": "Brand",
+				"type": "String"
+			},
+			{
+				"name": "Price",
+				"type": "String"
+			},
+			{
+				"name": "StockQuantity",
+				"type": "String"
+			}
+		]
+	}
+}
